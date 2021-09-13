@@ -1,0 +1,67 @@
+body{
+	background: #454d55;
+}
+
+.outer{
+	height: 100vh;
+	width: 100vw;
+
+	background: #454d55;
+
+	/*background: #8e9eab;  /* fallback for old browsers */
+/*background: -webkit-linear-gradient(to right, #eef2f3, #8e9eab);   Chrome 10-25, Safari 5.1-6 
+/*background: linear-gradient(to right, #eef2f3, #8e9eab); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.login_about{
+	
+	margin-left: 10%;
+	height: 80vh;
+	background: rgba(255,2555,255,0.2);
+
+}
+
+.login_head{
+	background: #212529;
+}
+
+.login_content{
+	background: none;
+	height: 70vh;
+}
+
+.login_detail{
+
+	margin-left: 20%;
+
+	background: rgba(255,2555,255,0.2);
+	height: 80vh;
+	width: 80%;
+}
+.user_id{
+	margin-top:10% ;
+}
+.password{
+	margin-top: 10%;
+}
+.login_btn{
+	margin-top: 10%;
+	
+	width: 30%;
+
+}
+.login_bar{
+
+	margin-top: 4%;
+	width: 75%;
+
+}
+.linked{
+	text-decoration: none;
+	color: indigo;
+}
+.linked:hover{
+	text-decoration:underline;
+	color: indigo;
+}
