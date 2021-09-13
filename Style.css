@@ -1,0 +1,149 @@
+html {
+	background: #abbaab;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #ffffff, #abbaab);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to top right, #ffffff, #abbaab); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+body{
+	background: #abbaab;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #ffffff, #abbaab);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to top right, #ffffff, #abbaab); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+height: 99vh;
+width: 100vw;
+}
+
+nav{
+
+
+	overflow: hidden;
+
+	display: flex;
+
+	/*align-items: center;*/	
+
+	background: #F9F9DE70;
+
+	margin: 0 auto;
+
+
+	margin-top: 1vh;
+
+	border-radius: 10px;
+
+	box-shadow: 4px 1px 28px;
+/*
+	border-bottom-right-radius:5px ;
+	border-bottom-left-radius:5px ;
+*/
+	height: 6vh;
+	width: 99vw;
+
+
+	-webkit-backdrop-filter: blur(10px);
+	backdrop-filter: blur(10px);
+
+}
+a{
+	text-decoration: none;
+	color: #000;
+}
+
+.brder{
+	width: 1px;
+	height: 100%;
+	background-color: #000000;
+}
+
+.nbar_logo{
+
+	width: 6.5%;
+	height: 90%;
+
+	margin-top: 3px;
+
+
+	border-right-width: 0.5px;
+	border-right-style: solid;
+	border-right-color: #F0F8FF;
+}
+
+.nbar_logo_image{
+	width: 100%;
+	height: 100%;
+
+	padding-bottom: 100%;
+}
+
+.nbar_logo_image:hover{
+
+}
+
+.nbar_home{
+	width: 6.5%;
+	height: 90%;
+
+	margin-top: 3px;
+
+	border-right-width: 0.5px;
+	border-right-style: solid;
+	border-right-color: #F0F8FF;
+	
+}
+
+.nbar_home:hover{
+	background-color:#FFE4B570 ;
+}
+
+.nbar_login{
+	width: 12%;
+	height: 90%;
+
+	margin-top: 3px;
+
+	border-right-width: 0.5px;
+	border-right-style: solid;
+	border-right-color: #F0F8FF;
+
+}
+
+.nbar_login:hover{
+	background-color:#FFE4B570 ;
+}
+
+.nbar_events{
+	width: 6%;
+	height: 90%;
+
+	margin-top: 3px;
+
+	border-right-width: 0.5px;
+	border-right-style: solid;
+	border-right-color: #F0F8FF;	
+
+		
+}
+
+.nbar_events:hover{
+	background-color:#FFE4B570 ;
+}
+
+.nbar_txt{
+
+	margin-top:1vh ;
+
+	font-weight: 400;
+
+	font-family:  Google Sans,sans-serif;
+
+	text-align: center;
+	width: 100%;
+
+	font-size: 1.4rem;
+
+}
+
+.test{
+	height: 100%;
+	width: 12%;
+}
