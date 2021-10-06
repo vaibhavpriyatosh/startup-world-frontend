@@ -1,0 +1,915 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Slider</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+<style type="text/css">
+  .try{
+    height: 100%;
+    width: 100%;
+    background: #000;
+  }
+  .btn_nav{
+    margin: 2.5rem;
+  }
+</style>
+
+</head>
+<body>
+
+ <!-- navbar -->
+<section>
+ 
+
+  <nav class="navbar" style="width:100%; height: 15vh; ">
+    
+    <div class="row" style="width:100%; height: 100%; background: #fff; margin: auto;">
+       <div class="col">
+          <a class="navbar-brand" href="#"><img src="https://test.smartcookie.in/images/250_86.png"></a>
+       </div>
+       <div class="col"></div>
+
+
+        <div class="col btn_nav d-grid">
+          <button type="button" class="btn btn-primary"><h3>College-Id</h3></button>
+      </div>
+
+        <div class="col btn_nav d-grid">
+          <button type="button" class="btn btn-primary"><h3>Member-Id</h3></button>
+      </div>
+
+       <div class="col btn_nav d-grid">
+          <button type="button" class="btn btn-primary"><h3>Registration</h3></button>
+      </div>
+
+      <div class="col btn_nav d-grid">
+          <button type="button" class="btn btn-primary"><h3>Login</h3></button>
+
+          <!-- <div class="btn-group">
+
+                <form method="POST" name="loginform" id="loginform">
+                    <select onchange="changeMessage()" id="entity" name="entity" class="btn btn-primary" style="width:70%">
+                      <option value="">Login</option>
+                      <option value="student">Student</option>
+                      <option value="employee">Employee</option>
+                      <option value="teacher">Teacher</option>
+                      <option value="manager">Manager</option>
+                      <option value="sponsor">Sponsor</option>
+                      <option value="5">Parent</option>
+                      <option value="1">School Admin</option>
+                      <option value="11">HR Admin</option>
+                      <option value="7">School Staff</option>
+                      <option value="71">HR Admin Staff</option>
+                      <option value="6">Cookie Admin</option>
+                      <option value="12">Group Admin</option>
+                      <option value="8">Cookie Staff</option>
+                      <option value="13">Group Admin Staff</option>
+                      <option value="salesperson">Sales Person</option>
+                      
+                    </select>
+                    </form>
+                </div>
+           -->
+      </div>
+
+
+       <div class="col"></div>
+
+    </div>
+
+  </nav>
+  <div class="row" style="width: 100%; background: red; height: 1px; margin:auto;"></div>
+
+</section>
+
+<!-- Slider -->
+<section style="margin-top: 3rem;">
+  <div class="container">
+   
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+     
+      <ol class="carousel-indicators" style ="margin: auto; margin-bottom: ;">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+        <li data-target="#myCarousel" data-slide-to="3"></li>
+        <li data-target="#myCarousel" data-slide-to="4"></li>
+        <li data-target="#myCarousel" data-slide-to="5"></li>
+        <li data-target="#myCarousel" data-slide-to="6"></li>
+      </ol>
+
+     
+      <div class="carousel-inner" style="height: 44rem;overflow: hidden;">
+        <div class="item active" style="height: 44rem ;">
+          <img src="img1.jfif" alt="Slide1" style="width:100%; height: 44rem;background: #000;">
+        </div>
+
+        <div class="item">
+          <img src="img2.jfif" alt="Slide2" style="width:100%; height: 44rem;background: #000;">
+        </div>
+     
+        <div class="item">
+          <img src="img3.jfif" alt="Slide3" style="width:100%; height:44rem;background: #000;">
+        </div>
+
+        <div class="item" >
+          <img src="img4.jfif" alt="Slide4" style="width:100%; height:44rem;background: #000;">
+        </div>
+
+        <div class="item" >
+          <img src="https://smartcookie.in/new/wp-content/uploads/2018/11/mainimg350-1.jpg" alt="Slide5" style="width:100%; height:44rem;">
+        </div>
+
+        <div class="item">
+          <div class="embed-responsive embed-responsive-16by9">
+            <video style="height: 44rem;" src="https://smartcookie.in/new/wp-content/uploads/2021/06/CampusConnect_EcoSystem_20210621_RK1.mp4" autoplay controls muted >
+        </video>
+            <script type="text/javascript">
+              document.getElementById('vid1').play();
+            </script>
+          </div>
+        </div>
+
+        <div class="item" >
+          <img src="img4.jfif" alt="Slide4" style="width:100%; height:44rem;background: #000;">
+        </div>
+        
+      </div>
+
+     
+    </div>
+  </div>
+</section>
+
+
+ <!-- college -->
+<section style=" margin-top:3rem ;">
+ 
+  <h1 style="text-align: center;">Colleges</h1>
+  <div style="display:flex; margin-top:3rem ;">
+
+
+  <div class="container">
+   
+    <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="2000">
+     
+      <div class="carousel-inner" style="height: 24rem;overflow: hidden border-radius:10px">
+        <div class="item active" style="height: 24rem ;">
+          <img src="img1.jfif" alt="Slide1" style="width:100%; height: 14rem; background: #000;">
+        </div>
+
+        <div class="item">
+          <img src="img2.jfif" alt="Slide2" style="width:100%; height: 14rem;background: rebeccapurple;">
+        </div>
+     
+        <div class="item">
+          <img src="img3.jfif" alt="Slide3" style="width:100%; height:14rem;background: blueviolet;">
+        </div>
+
+        <div class="item" >
+          <img src="img4.jfif" alt="Slide4" style="width:100%; height:14rem;background: brown;">
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+  <div class="container">
+   
+    <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="2000">
+     
+      <div class="carousel-inner" style="height: 24rem;overflow: hidden border-radius:10px">
+        <div class="item active" style="height: 24rem ;">
+          <img src="img1.jfif" alt="Slide1" style="width:100%; height: 14rem; background: #000;">
+        </div>
+
+        <div class="item">
+          <img src="img2.jfif" alt="Slide2" style="width:100%; height: 14rem;background: rebeccapurple;">
+        </div>
+     
+        <div class="item">
+          <img src="img3.jfif" alt="Slide3" style="width:100%; height:14rem;background: blueviolet;">
+        </div>
+
+        <div class="item" >
+          <img src="img4.jfif" alt="Slide4" style="width:100%; height:14rem;background: brown;">
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+  <div class="container">
+   
+    <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="2000">
+     
+      <div class="carousel-inner" style="height: 24rem;overflow: hidden border-radius:10px">
+        <div class="item active" style="height: 24rem ;">
+          <img src="img1.jfif" alt="Slide1" style="width:100%; height: 14rem; background: #000;">
+        </div>
+
+        <div class="item">
+          <img src="img2.jfif" alt="Slide2" style="width:100%; height: 14rem;background: rebeccapurple;">
+        </div>
+     
+        <div class="item">
+          <img src="img3.jfif" alt="Slide3" style="width:100%; height:14rem;background: blueviolet;">
+        </div>
+
+        <div class="item" >
+          <img src="img4.jfif" alt="Slide4" style="width:100%; height:14rem;background: brown;">
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+  <div class="container">
+   
+    <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="2000">
+     
+      <div class="carousel-inner" style="height: 24rem;overflow: hidden border-radius:10px">
+        <div class="item active" style="height: 24rem ;">
+          <img src="img1.jfif" alt="Slide1" style="width:100%; height: 14rem; background: #000;">
+        </div>
+
+        <div class="item">
+          <img src="img2.jfif" alt="Slide2" style="width:100%; height: 14rem;background: rebeccapurple;">
+        </div>
+     
+        <div class="item">
+          <img src="img3.jfif" alt="Slide3" style="width:100%; height:14rem;background: blueviolet;">
+        </div>
+
+        <div class="item" >
+          <img src="img4.jfif" alt="Slide4" style="width:100%; height:14rem;background: brown;">
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+  <div class="container">
+   
+    <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="2000">
+     
+      <div class="carousel-inner" style="height: 24rem;overflow: hidden border-radius:10px">
+        <div class="item active" style="height: 24rem ;">
+          <img src="img1.jfif" alt="Slide1" style="width:100%; height: 14rem; background: #000;">
+        </div>
+
+        <div class="item">
+          <img src="img2.jfif" alt="Slide2" style="width:100%; height: 14rem;background: rebeccapurple;">
+        </div>
+     
+        <div class="item">
+          <img src="img3.jfif" alt="Slide3" style="width:100%; height:14rem;background: blueviolet;">
+        </div>
+
+        <div class="item" >
+          <img src="img4.jfif" alt="Slide4" style="width:100%; height:14rem;background: brown;">
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+  <div class="container">
+   
+    <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="2000">
+     
+      <div class="carousel-inner" style="height: 24rem;overflow: hidden border-radius:10px">
+        <div class="item active" style="height: 24rem ;">
+          <img src="img1.jfif" alt="Slide1" style="width:100%; height: 14rem; background: #000;">
+        </div>
+
+        <div class="item">
+          <img src="img2.jfif" alt="Slide2" style="width:100%; height: 14rem;background: rebeccapurple;">
+        </div>
+     
+        <div class="item">
+          <img src="img3.jfif" alt="Slide3" style="width:100%; height:14rem;background: blueviolet;">
+        </div>
+
+        <div class="item" >
+          <img src="img4.jfif" alt="Slide4" style="width:100%; height:14rem;background: brown;">
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+  <div class="container">
+   
+    <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="2000">
+     
+      <div class="carousel-inner" style="height: 24rem;overflow: hidden border-radius:10px">
+        <div class="item active" style="height: 24rem ;">
+          <img src="img1.jfif" alt="Slide1" style="width:100%; height: 14rem; background: #000;">
+        </div>
+
+        <div class="item">
+          <img src="img2.jfif" alt="Slide2" style="width:100%; height: 14rem;background: rebeccapurple;">
+        </div>
+     
+        <div class="item">
+          <img src="img3.jfif" alt="Slide3" style="width:100%; height:14rem;background: blueviolet;">
+        </div>
+
+        <div class="item" >
+          <img src="img4.jfif" alt="Slide4" style="width:100%; height:14rem;background: brown;">
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+  <div class="container">
+   
+    <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="2000">
+     
+      <div class="carousel-inner" style="height: 24rem;overflow: hidden border-radius:10px">
+        <div class="item active" style="height: 24rem ;">
+          <img src="img1.jfif" alt="Slide1" style="width:100%; height: 14rem; background: red;">
+        </div>
+
+        <div class="item">
+          <img src="img2.jfif" alt="Slide2" style="width:100%; height: 14rem;background: rebeccapurple;">
+        </div>
+     
+        <div class="item">
+          <img src="img3.jfif" alt="Slide3" style="width:100%; height:14rem;background: blueviolet;">
+        </div>
+
+        <div class="item" >
+          <img src="img4.jfif" alt="Slide4" style="width:100%; height:14rem;background: brown;">
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  </div>
+</section>
+
+<!-- sponsors -->
+<section>
+
+  <h1 style="text-align: center;">Sponsers</h1>
+
+  <div style="display:flex; margin-top:2rem ;">
+
+
+  <div class="container">
+   
+    <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="2000">
+     
+      <div class="carousel-inner" style="height: 10rem;overflow: hidden">
+        <div class="item active" style="height: 10rem ;">
+          <img src="img1.jfif" alt="Slide1" style="width:100%; height: 10rem; background: #000;">
+        </div>
+
+        <div class="item">
+          <img src="img2.jfif" alt="Slide2" style="width:100%; height: 10rem;background: rebeccapurple;">
+        </div>
+     
+        <div class="item">
+          <img src="img3.jfif" alt="Slide3" style="width:100%; height:10rem;background: blueviolet;">
+        </div>
+
+        <div class="item" >
+          <img src="img4.jfif" alt="Slide4" style="width:100%; height:10rem;background: brown;">
+        </div>
+
+        <div class="item" >
+          <img src="img5.jfif" alt="Slide4" style="width:100%; height:10rem;background: brown;">
+        </div>
+
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <div class="container">
+   
+    <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="2000">
+     
+      <div class="carousel-inner" style="height: 10rem;overflow: hidden">
+        <div class="item active" style="height: 10rem ;">
+          <img src="img1.jfif" alt="Slide1" style="width:100%; height: 10rem; background: #000;">
+        </div>
+
+        <div class="item">
+          <img src="img2.jfif" alt="Slide2" style="width:100%; height: 10rem;background: rebeccapurple;">
+        </div>
+     
+        <div class="item">
+          <img src="img3.jfif" alt="Slide3" style="width:100%; height:10rem;background: blueviolet;">
+        </div>
+
+        <div class="item" >
+          <img src="img4.jfif" alt="Slide4" style="width:100%; height:10rem;background: brown;">
+        </div>
+
+        <div class="item" >
+          <img src="img5.jfif" alt="Slide4" style="width:100%; height:10rem;background: brown;">
+        </div>
+
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <div class="container">
+   
+    <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="2000">
+     
+      <div class="carousel-inner" style="height: 10rem;overflow: hidden">
+        <div class="item active" style="height: 10rem ;">
+          <img src="img1.jfif" alt="Slide1" style="width:100%; height: 10rem; background: #000;">
+        </div>
+
+        <div class="item">
+          <img src="img2.jfif" alt="Slide2" style="width:100%; height: 10rem;background: rebeccapurple;">
+        </div>
+     
+        <div class="item">
+          <img src="img3.jfif" alt="Slide3" style="width:100%; height:10rem;background: blueviolet;">
+        </div>
+
+        <div class="item" >
+          <img src="img4.jfif" alt="Slide4" style="width:100%; height:10rem;background: brown;">
+        </div>
+
+        <div class="item" >
+          <img src="img5.jfif" alt="Slide4" style="width:100%; height:10rem;background: brown;">
+        </div>
+
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <div class="container">
+   
+    <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="2000">
+     
+      <div class="carousel-inner" style="height: 10rem;overflow: hidden">
+        <div class="item active" style="height: 10rem ;">
+          <img src="img1.jfif" alt="Slide1" style="width:100%; height: 10rem; background: #000;">
+        </div>
+
+        <div class="item">
+          <img src="img2.jfif" alt="Slide2" style="width:100%; height: 10rem;background: rebeccapurple;">
+        </div>
+     
+        <div class="item">
+          <img src="img3.jfif" alt="Slide3" style="width:100%; height:10rem;background: blueviolet;">
+        </div>
+
+        <div class="item" >
+          <img src="img4.jfif" alt="Slide4" style="width:100%; height:10rem;background: brown;">
+        </div>
+
+        <div class="item" >
+          <img src="img5.jfif" alt="Slide4" style="width:100%; height:10rem;background: brown;">
+        </div>
+
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <div class="container">
+   
+    <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="2000">
+     
+      <div class="carousel-inner" style="height: 10rem;overflow: hidden">
+        <div class="item active" style="height: 10rem ;">
+          <img src="img1.jfif" alt="Slide1" style="width:100%; height: 10rem; background: #000;">
+        </div>
+
+        <div class="item">
+          <img src="img2.jfif" alt="Slide2" style="width:100%; height: 10rem;background: rebeccapurple;">
+        </div>
+     
+        <div class="item">
+          <img src="img3.jfif" alt="Slide3" style="width:100%; height:10rem;background: blueviolet;">
+        </div>
+
+        <div class="item" >
+          <img src="img4.jfif" alt="Slide4" style="width:100%; height:10rem;background: brown;">
+        </div>
+
+        <div class="item" >
+          <img src="img5.jfif" alt="Slide4" style="width:100%; height:10rem;background: brown;">
+        </div>
+
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <div class="container">
+   
+    <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="2000">
+     
+      <div class="carousel-inner" style="height: 10rem;overflow: hidden">
+        <div class="item active" style="height: 10rem ;">
+          <img src="img1.jfif" alt="Slide1" style="width:100%; height: 10rem; background: #000;">
+        </div>
+
+        <div class="item">
+          <img src="img2.jfif" alt="Slide2" style="width:100%; height: 10rem;background: rebeccapurple;">
+        </div>
+     
+        <div class="item">
+          <img src="img3.jfif" alt="Slide3" style="width:100%; height:10rem;background: blueviolet;">
+        </div>
+
+        <div class="item" >
+          <img src="img4.jfif" alt="Slide4" style="width:100%; height:10rem;background: brown;">
+        </div>
+
+        <div class="item" >
+          <img src="img5.jfif" alt="Slide4" style="width:100%; height:10rem;background: brown;">
+        </div>
+
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <div class="container">
+   
+    <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="2000">
+     
+      <div class="carousel-inner" style="height: 10rem;overflow: hidden">
+        <div class="item active" style="height: 10rem ;">
+          <img src="img1.jfif" alt="Slide1" style="width:100%; height: 10rem; background: #000;">
+        </div>
+
+        <div class="item">
+          <img src="img2.jfif" alt="Slide2" style="width:100%; height: 10rem;background: rebeccapurple;">
+        </div>
+     
+        <div class="item">
+          <img src="img3.jfif" alt="Slide3" style="width:100%; height:10rem;background: blueviolet;">
+        </div>
+
+        <div class="item" >
+          <img src="img4.jfif" alt="Slide4" style="width:100%; height:10rem;background: brown;">
+        </div>
+
+        <div class="item" >
+          <img src="img5.jfif" alt="Slide4" style="width:100%; height:10rem;background: brown;">
+        </div>
+
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <div class="container">
+   
+    <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="2000">
+     
+      <div class="carousel-inner" style="height: 10rem;overflow: hidden">
+        <div class="item active" style="height: 10rem ;">
+          <img src="img1.jfif" alt="Slide1" style="width:100%; height: 10rem; background: #000;">
+        </div>
+
+        <div class="item">
+          <img src="img2.jfif" alt="Slide2" style="width:100%; height: 10rem;background: rebeccapurple;">
+        </div>
+     
+        <div class="item">
+          <img src="img3.jfif" alt="Slide3" style="width:100%; height:10rem;background: blueviolet;">
+        </div>
+
+        <div class="item" >
+          <img src="img4.jfif" alt="Slide4" style="width:100%; height:10rem;background: brown;">
+        </div>
+
+        <div class="item" >
+          <img src="img5.jfif" alt="Slide4" style="width:100%; height:10rem;background: brown;">
+        </div>
+
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <div class="container">
+   
+    <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="2000">
+     
+      <div class="carousel-inner" style="height: 10rem;overflow: hidden">
+        <div class="item active" style="height: 10rem ;">
+          <img src="img1.jfif" alt="Slide1" style="width:100%; height: 10rem; background: #000;">
+        </div>
+
+        <div class="item">
+          <img src="img2.jfif" alt="Slide2" style="width:100%; height: 10rem;background: rebeccapurple;">
+        </div>
+     
+        <div class="item">
+          <img src="img3.jfif" alt="Slide3" style="width:100%; height:10rem;background: blueviolet;">
+        </div>
+
+        <div class="item" >
+          <img src="img4.jfif" alt="Slide4" style="width:100%; height:10rem;background: brown;">
+        </div>
+
+        <div class="item" >
+          <img src="img5.jfif" alt="Slide4" style="width:100%; height:10rem;background: brown;">
+        </div>
+
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <div class="container">
+   
+    <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="2000">
+     
+      <div class="carousel-inner" style="height: 10rem;overflow: hidden">
+        <div class="item active" style="height: 10rem ;">
+          <img src="img1.jfif" alt="Slide1" style="width:100%; height: 10rem; background: #000;">
+        </div>
+
+        <div class="item">
+          <img src="img2.jfif" alt="Slide2" style="width:100%; height: 10rem;background: rebeccapurple;">
+        </div>
+     
+        <div class="item">
+          <img src="img3.jfif" alt="Slide3" style="width:100%; height:10rem;background: blueviolet;">
+        </div>
+
+        <div class="item" >
+          <img src="img4.jfif" alt="Slide4" style="width:100%; height:10rem;background: brown;">
+        </div>
+
+        <div class="item" >
+          <img src="img5.jfif" alt="Slide4" style="width:100%; height:10rem;background: brown;">
+        </div>
+
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+  </div>
+
+  </div>
+</section>
+
+
+<!-- project test -->
+<!-- <section>
+
+  <h1 style="text-align: center;">Sponsers</h1>
+
+  <div style="display:flex; margin-top:2rem ;">
+
+
+  <div class="container">
+   
+    <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="2000">
+     
+      <div class="carousel-inner" style="height: 24rem;overflow: hidden">
+        <div class="item active" style="height: 24rem ;">
+          <img src="img1.png" alt="Slide1" style="width:100%; height: 24rem; background: #000;">
+        </div>
+
+        <div class="item">
+          <img src="img2.png" alt="Slide2" style="width:100%; height: 24rem;background: rebeccapurple;">
+        </div>
+     
+        <div class="item">
+          <img src="img3.png" alt="Slide3" style="width:100%; height:24rem;background: blueviolet;">
+        </div>
+
+        <div class="item" >
+          <img src="img4.png" alt="Slide4" style="width:100%; height:24rem;background: brown;">
+        </div>
+
+        <div class="item" >
+          <img src="img5.png" alt="Slide4" style="width:100%; height:24rem;background: brown;">
+        </div>
+
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <div class="container">
+   
+    <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="2000">
+     
+      <div class="carousel-inner" style="height: 24rem;overflow: hidden">
+        <div class="item active" style="height: 24rem ;">
+          <img src="img1.png" alt="Slide1" style="width:100%; height: 24rem; background: #000;">
+        </div>
+
+        <div class="item">
+          <img src="img2.png" alt="Slide2" style="width:100%; height: 24rem;background: rebeccapurple;">
+        </div>
+     
+        <div class="item">
+          <img src="img3.png" alt="Slide3" style="width:100%; height:24rem;background: blueviolet;">
+        </div>
+
+        <div class="item" >
+          <img src="img4.png" alt="Slide4" style="width:100%; height:24rem;background: brown;">
+        </div>
+
+        <div class="item" >
+          <img src="img5.png" alt="Slide4" style="width:100%; height:24rem;background: brown;">
+        </div>
+
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <div class="container">
+   
+    <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="2000">
+     
+      <div class="carousel-inner" style="height: 24rem;overflow: hidden">
+        <div class="item active" style="height: 24rem ;">
+          <img src="img1.png" alt="Slide1" style="width:100%; height: 24rem; background: #000;">
+        </div>
+
+        <div class="item">
+          <img src="img2.png" alt="Slide2" style="width:100%; height: 24rem;background: rebeccapurple;">
+        </div>
+     
+        <div class="item">
+          <img src="img3.png" alt="Slide3" style="width:100%; height:24rem;background: blueviolet;">
+        </div>
+
+        <div class="item" >
+          <img src="img4.png" alt="Slide4" style="width:100%; height:24rem;background: brown;">
+        </div>
+
+        <div class="item" >
+          <img src="img5.png" alt="Slide4" style="width:100%; height:24rem;background: brown;">
+        </div>
+
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <div class="container">
+   
+    <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="2000">
+     
+      <div class="carousel-inner" style="height: 24rem;overflow: hidden">
+        <div class="item active" style="height: 24rem ;">
+          <img src="img1.png" alt="Slide1" style="width:100%; height: 24rem; background: #000;">
+        </div>
+
+        <div class="item">
+          <img src="img2.png" alt="Slide2" style="width:100%; height: 24rem;background: rebeccapurple;">
+        </div>
+     
+        <div class="item">
+          <img src="img3.png" alt="Slide3" style="width:100%; height:24rem;background: blueviolet;">
+        </div>
+
+        <div class="item" >
+          <img src="img4.png" alt="Slide4" style="width:100%; height:24rem;background: brown;">
+        </div>
+
+        <div class="item" >
+          <img src="img5.png" alt="Slide4" style="width:100%; height:24rem;background: brown;">
+        </div>
+
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <div class="container">
+   
+    <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="2000">
+     
+      <div class="carousel-inner" style="height: 24rem;overflow: hidden">
+        <div class="item active" style="height: 24rem ;">
+          <img src="img1.png" alt="Slide1" style="width:100%; height: 24rem; background: #000;">
+        </div>
+
+        <div class="item">
+          <img src="img2.png" alt="Slide2" style="width:100%; height: 24rem;background: rebeccapurple;">
+        </div>
+     
+        <div class="item">
+          <img src="img3.png" alt="Slide3" style="width:100%; height:24rem;background: blueviolet;">
+        </div>
+
+        <div class="item" >
+          <img src="img4.png" alt="Slide4" style="width:100%; height:24rem;background: brown;">
+        </div>
+
+        <div class="item" >
+          <img src="img5.png" alt="Slide4" style="width:100%; height:24rem;background: brown;">
+        </div>
+
+
+      </div>
+
+    </div>
+
+  </div>
+
+  </div>
+</section> -->
+
+<!-- Projects -->
+<section style="margin-bottom: 5rem;margin-top: 15rem;">
+  <div class="container">
+    <h>Projects</h1>  
+    <div id="myCarousel_1" class="carousel slide" data-ride="carousel">
+
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner">
+        <div class="item active">
+          <img src="" alt="Project 1" style="width:100%; height: 40rem;">
+        </div>
+
+        <div class="item">
+          <img src="" alt="Project 2" style="width:100%; height: 40rem;">
+        </div>
+      
+        <div class="item">
+          <img src="" alt="Project 3" style="width:100%; height: 40rem;">
+        </div>
+      </div>
+
+      <!-- Left and right controls -->
+      <a class="left carousel-control" href="#myCarousel_1" data-slide="prev"><!-- you cant give id same as previous so changed it -->
+        <span class="glyphicon glyphicon-chevron-left"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#myCarousel_1" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+</body>
+</html>
